@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./ressources/style.css">
+
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="grid">
+        <div class="info">
+            <p>Player 1</p>
+            <div id="player1"></div>
+            <div id="player1play"></div>
+        </div>
+        <div class="game">
+            <div class="board">
+                <div class="container">
+                    <div data-cell-index="0" class="top-left" id="box">
+                    </div>
+                    <div data-cell-index="1" class="top-middle" id="box">
+
+                    </div>
+                    <div data-cell-index="2" class="top-right" id="box">
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div data-cell-index="3" class="left" id="box">
+
+                    </div>
+                    <div data-cell-index="4" class="middle" id="box">
+
+                    </div>
+                    <div data-cell-index="5" class="right" id="box"></div>
+                </div>
+                <div class="container">
+                    <div data-cell-index="6" class="bottom-left" id="box">
+
+                    </div>
+                    <div data-cell-index="7" class="bottom-middle" id="box">
+
+                    </div>
+                    <div data-cell-index="8" class="bottom-right" id="box">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <h2 class="game--status"></h2>
+                <button type="reset" id="reset" class="btn">Restart</button>
+                <button id="rules-btn">Rules</button>
+            </div>
+        </div>
+        <div class="info">
+            <label for="Name">Player 2</label>
+            <div id="player2"><input type="text" placeholder="Name" id="playerName">
+            <button id="submit">Enter</button>
+</div>
+<div id="player2play"></div>
+            </div>
+
+        </div>
+    
+    <div id="pop-box" class="modal">
+        <div class="rules-box">
+            <h3>Rules for Tic-Tac-Toe</h3>
+            <ol>
+                <li>You play on a 3 X 3 grid.</li>
+                <li>First player is X, second player is O. Players click turn by turn a case in the grid.</li>
+                <li>The first player who puts 3 consecutive marks on a row (horizontally, vertically or diagonallly)
+                    wins the game.</li>
+                <li>If the 9 squares are marked and no one has made a row, it's a tie.</li>
+            </ol>
+            <span class="close">Play</span>
+        </div>
+    </div>
+    
+
+    <script src="./ressources/script.js"></script>
+
+</body>
+
+</html>
